@@ -1,0 +1,15 @@
+version: '3'
+services:
+  wp_developer_exam:
+    image: mysql:8.0
+    container_name: wp_developer_exam
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: paulo
+      MYSQL_USER: paulo
+      MYSQL_PASSWORD: paulo
+      MYSQL_ROOT_PASSWORD: paulo
+    volumes:
+      - ./data:/var/lib/mysql
