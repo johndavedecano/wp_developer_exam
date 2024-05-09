@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss build ./wp-content/themes/ecommerce/styles/style.css -o ./wp-content/themes/ecommerce/dist/style.css"
+    "build:css": "tailwindcss build ./wp-content/themes/ecommerce/styles/style.css -o ./wp-content/themes/ecommerce/dist/style.css",
+    "watch:css": "tailwindcss -i ./wp-content/themes/ecommerce/styles/style.css -o ./wp-content/themes/ecommerce/dist/style.css --watch"
   },
   "author": "",
   "license": "ISC",
